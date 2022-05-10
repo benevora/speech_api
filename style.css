@@ -1,0 +1,77 @@
+/* ======= Global ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+/* ====== BODY  ========== */
+.speech { 
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    250deg,
+    rgba(240, 98, 146, 1) 0%,
+    rgba(221, 89, 133, 1) 98%
+  );
+}
+
+p {
+  color: #fff;
+  font-size: 3rem;
+}
+
+textarea {
+  width: 80%;
+  height: 40%;
+  margin: 50px auto;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  text-align: justify;
+}
+
+textarea::-webkit-scrollbar { 
+  width: 12px;
+  background-color: whitesmoke;
+}
+
+textarea::-webkit-scrollbar-thumb { 
+  border-radius: 10px;
+  background-color: darkgrey;
+}
+
+.fas {
+  font-weight: 600;
+  font-size: 3rem;
+  min-width: 3rem;
+}
+
+button {
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.fa-trash-alt {
+  color: red;
+}
+
+/* =========== responcive =============== */
+
+@media (max-width: 700px) {
+  p {
+    font-size: 2rem;
+  }
+
+  .fas {
+    font-size: 2rem;
+    min-width: 2rem;
+  }
+}
