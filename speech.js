@@ -16,7 +16,8 @@ class speechApi {
     this.output = textarea.output;
     this.speechApi.continuous = true;
     // recognized language
-    this.speechApi.lang = "pt-PT";
+    // this.speechApi.lang = "pt-PT";
+    this.speechApi.lang = "en";
 
     this.speechApi.onresult = (e) => {
       var resultIndex = e.resultIndex;
@@ -77,7 +78,7 @@ function download(text, fileName) {
   document.body.removeChild(element);
 };
 
-// ====== Event to clean ============
+// ====== Event to reset ============
 btnLimpar.addEventListener('click', () => {
   textarea.value = '';
   btnGravar.disabled = false;
